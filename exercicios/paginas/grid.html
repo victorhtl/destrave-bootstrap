@@ -30,33 +30,101 @@
 <div class="exercicio">
     <h1>1. Grid Básica</h1>
     <hr>
+    <p>O conteúdo abaixo vai permanecer no tamanho total da tela</p>
 
-    <!-- Grid Básica -->
+    <!-- container centraliza a div -->
+    <!-- container-fluid faz o conteúdo expandir de acordo com a tela -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col bg-primary">1</div>
+            <div class="col bg-danger">2</div>
+            <div class="col bg-warning">3</div>
+            <div class="col bg-secondary">4</div>
+            <div class="col bg-info">5</div>
+        </div>
+        <div class="row">
+            <!--As divs com col-4 e col-5 terão uma proporção fixa-->
+            <div class="col bg-primary">1</div>
+            <div class="col-4 bg-danger">2</div>
+            <div class="col-5 bg-warning">3</div>
+            <div class="col bg-secondary">4</div>
+        </div>
+    </div>
 
     <h1 class="mt-5">2. Grid Responsiva</h1>
     <hr>
+    <p>O conteúdo vai mudar sua ocupação das colunas de acordo com o tamanho da tela</p>
 
     <!-- Grid Responsiva -->
+    <!-- Abaixo, estou dizendo quantas colunas cada div vai ocupar de acordo com o dispositivo-->
+    <!-- Se o dispositivo for extra small, ocupa 12. Se for small, ocupa 6 -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-cl-1 bg-primary">1</div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-cl-1 bg-danger">2</div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-cl-1 bg-warning">3</div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-cl-1 bg-info">4</div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-cl-1 bg-success">5</div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-cl-1 bg-secondary">6</div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-cl-1 bg-danger">7</div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-cl-1 bg-info">8</div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-cl-1 bg-success">9</div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-cl-1 bg-secondary">10</div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-cl-1 bg-waning">11</div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-cl-1 bg-primary">12</div>
+        </div>
+    </div>
 
     <h1 class="mt-5">3. Quebra de Linha</h1>
     <hr>
 
     <!-- Quebra de Linha -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3 bg-primary">1</div>
+            <div class="col-3 bg-danger">2</div>
+            <div class="w-100"></div> <!--Vai ocupar a largura total da tela-->
+            <div class="col-3 bg-warning">4</div>
+        </div>
+    </div>
 
     <h1 class="mt-5">4. Ordem</h1>
     <hr>
+    <p>A classe order possibilita a troca da ordem dos elementos via JavaScript</p>
 
     <!-- Ordem -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4 order-5 bg-primary">1</div>
+            <div class="col-4 order-12 bg-danger">2</div>
+            <div class="col-4 order-1 bg-warning">3</div>
+        </div>
+    </div>
 
     <h1 class="mt-5">5. Offset</h1>
     <hr>
-
+    <p>O offset empura a div para a direita</p>
+    <p>O efeito só funciona em dispositivos -md</p>
     <!-- Offset -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 offset-md-7 bg-primary">1</div>
+            <div class="col-md-4 offset-md-3 bg-danger">2</div>
+            <div class="col-md-6 offset-md-1 bg-warning">2</div>
+        </div>
+    </div>
 
     <h1 class="mt-5">6. Alinhamento</h1>
     <hr>
 
     <!-- Alinhamento -->
+    <div class="container-fluid">
+        <div class="row h-300">
+            <div class="col-4 align-self-end bg-primary">1</div>
+            <div class="col-4 align-self-center bg-danger">2</div>
+            <div class="col-4 align-self-start bg-warning">3</div>
+        </div>
+    </div>
 </div>
 
 <style>
